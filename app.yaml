@@ -2,12 +2,12 @@ application: websiteforkumon #My GAE project id
 version: 1
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: yes
 
 handlers:
 
 - url: /images
   static_dir: images
 
-- url: /.*  # Direct all routes to FlaskServer.py
+- url: .*  # Direct all routes to FlaskServer.py
   script: FlaskServer.app
