@@ -9,6 +9,10 @@ def hello():
     """Return a friendly HTTP greeting."""
     return render_template('MainPage.html')
 
+@app.route('/kumon')
+def kumon():
+	return render_template('TimDuncan.html')
+
 @app.route('/aboutme')
 def aboutMe():
 	return render_template('AboutMe.html')
