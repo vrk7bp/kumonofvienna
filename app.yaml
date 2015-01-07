@@ -9,5 +9,5 @@ handlers:
 - url: /images
   static_dir: images
 
-- url: .*  # Direct all routes to FlaskServer.py
+- url: /.*  # Direct all routes to FlaskServer.py
   script: FlaskServer.app
